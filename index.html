@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+	--
+	Copyright 2010 Marc Stober
+    
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	--
+-->
+<html>
+<head>
+	<LINK REL=StyleSheet HREF="jquery.nonlatinkeyboard.css" TYPE="text/css" />
+	<style type="text/css">
+	
+		body {
+			font-family: Arial, san-serif; 
+			background-color:#60B9CE;
+			margin: 0;
+		}
+		#wrap {
+			width: 960px;
+			padding: 20px;
+			background-color: white;
+			margin: 0 auto;
+		}
+		#mainInput {
+			width: 600px;
+			height: 190px;
+		font-size: 18pt;
+		}
+		h1 { 
+			font-family: Courier New, monospace;
+			font-size: 27px;
+			text-align: center;
+		}
+		#typewriter {
+			text-align: center;
+		}
+		/* keyboard can be positioned/resized (overriding defaults) by consuming page */
+		#nlk-keyboard {
+			width: 600px;
+			margin: 0.7em auto;
+		}
+		</style>
+</head>
+<body>
+
+<div id="wrap">
+
+	<h1 id="h1en">Online Hebrew Typewriter<sup>alpha</sup> * אִינְטֶרְנֶט מְכוֹנַת כְּתִיבָה עִבְרִית<sup>α</sup></h1>
+	
+	
+	<p id="instructions">
+		Just start typing. Press Shift, Ctrl+Alt, and Shift+Ctrl+Alt for additional characters. 
+		Copy & paste into other web forms and most word processors.
+	</p>
+
+	
+<div id="typewriter">
+	<textarea id="mainInput" dir="rtl">שלוֺם!</textarea>
+</div>
+
+<div>
+
+<p>Comments and questions? For now you can e-mail me...</p>
+
+<p>Based on ideas from Dan Sieradski, Ze'ev Clementson, and Aharon Varady and Efraim Feinstein from the OpenSiddur project. תודה רבה (much thanks) to <a href="http://www.jquery.com">jQuery</a>.
+
+
+<h2>Requirements</h2>
+<ol>
+	<li>jQuery plugin</li>
+	<li>Should work with either &lt;textarea&gt; or &lt;input type="text"&gt;.</li>
+	<li>Work with multiple textareas/input on the page.</li>
+	<li>Home keys are visually distinct.</li>
+	<li>As user shifts modes, key caps change.</li>
+	<li>Affordance of how to invoke other modes?</li>
+	<li>Resizable?</li>
+	<li>Able to click keys with a mouse. Control keys, too?</li>
+	<li>Able to click keys by tabbing to them, if you really want (standard HTML buttons).</li>
+	<li>"Sticky" option?</li>
+	<li>Separate profile file, support different languages.</li>
+	<li>Drop-down to select between US English and other mappings.</li>
+	<li>User should be able to turn it off.</li>
+	<li>Ctrl-c, Ctrl-v, etc. should work (i.e., standard shortcut keys not interfered with).</li>
+</ol>
+<h2>Limitations</h2>
+Native keyboard is US English only (untested on others).
+</div>
+<hr/>
+Copyright &copy; 2010 Marc Stober. Distributed under terms of the GNU LGPL.
+</div>
+
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.nonlatinkeyboard.js"></script>
+<script type="text/javascript">
+
+$(function() {
+	$("textarea").nonLatinKeyboard({ appendTo: $("#typewriter") }).focus();
+});
+
+</script>
+
+
+
+</body>
+</html>

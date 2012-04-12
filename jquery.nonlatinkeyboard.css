@@ -1,0 +1,150 @@
+/*
+	--
+	Copyright 2010 Marc Stober
+    
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	--
+*/
+#nlk-keyboard {
+	font-size: 24px;
+	padding-left: 0.6667%;
+}
+
+#nlk-keyboard .toolbar {
+	height: 20px;
+	font-size: 50%;
+	padding-right: 0.6667%;
+}
+
+#nlk-keyboard .toolbar button{
+	font-family: Arial, sans-serif;
+	font-size: 100%; /* allows resizing button text? */
+	xposition: absolute;
+	border: solid 1px #999999;
+	text-align: center;
+	xwidth: 6%;
+	height: 90%;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	background-color: #ECECEC;
+}
+
+#nlk-keyboard .row {
+	position: relative;
+	height: 40px;
+}
+#nlk-keyboard .key {
+	font-family: Arial, sans-serif;
+	font-size: 100%; /* allows resizing button text? */
+	position: absolute;
+	border: solid 1px #999999;
+	text-align: center;
+	width: 6%;
+	height: 90%;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	background-color: #ECECEC;
+}
+#nlk-keyboard .homekey {
+	background-color: #ECE0E0;
+}
+#nlk-keyboard .wordkey {
+	font-size : 70%;	
+}
+#nlk-keyboard .statekey {
+	border-color: #FFD300;
+	font-size : 70%;	
+}
+#nlk-keyboard button.down {
+	color: white;
+	background-color: #333399;
+}
+
+/* started above selectors w/#nlk-keyboard so they would be more specific.
+	turns out I even need to it below, or the above rules with override the specific key sizes.
+	TODO: come up with a better plan. */
+
+#nlk-keyboard  #nlk49 { left: 6.6667%; }
+#nlk-keyboard  #nlk50 { left: 13.3333%; }
+#nlk-keyboard  #nlk51 { left: 20%; }
+#nlk-keyboard  #nlk52 { left: 26.6667%; }
+#nlk-keyboard  #nlk53 { left: 33.3333%; }
+#nlk-keyboard  #nlk54 { left: 40%; }
+#nlk-keyboard  #nlk55 { left: 46.6667%; }
+#nlk-keyboard  #nlk56 { left: 53.3333%; }
+#nlk-keyboard  #nlk57 { left: 60%; }
+#nlk-keyboard  #nlk48 { left: 66.6667%; }
+#nlk-keyboard  #nlk189 { left: 73.3333%; }
+#nlk-keyboard  #nlk187 { left: 80%; }
+#nlk-keyboard  #nlk8 { left: 86.6667%; width: 12.667%; }
+
+#nlk-keyboard  #nlk9 { width: 9.3333%; }
+#nlk-keyboard  #nlk81 { left: 10%; }
+#nlk-keyboard  #nlk87 { left: 16.6667%; }
+#nlk-keyboard  #nlk69 { left: 23.3333%; }
+#nlk-keyboard  #nlk82 { left: 30%; }
+#nlk-keyboard  #nlk84 { left: 36.6667%; }
+#nlk-keyboard  #nlk89 { left: 43.3333%; }
+#nlk-keyboard  #nlk85 { left: 50%; }
+#nlk-keyboard  #nlk73 { left: 56.6667%; }
+#nlk-keyboard  #nlk79 { left: 63.3333%; }
+#nlk-keyboard  #nlk80 { left: 70%; }
+#nlk-keyboard  #nlk219 { left: 76.6667%; }
+#nlk-keyboard  #nlk221 { left: 83.3333%; }
+#nlk-keyboard  #nlk220 { left: 89.6667%; width: 9.6667%; }
+
+#nlk-keyboard  #nlk20 { width: 11.3333%; }
+#nlk-keyboard  #nlk65 { left: 12%; }
+#nlk-keyboard  #nlk83 { left: 18.6667%; }
+#nlk-keyboard  #nlk68 { left: 25.1667%; }
+#nlk-keyboard  #nlk70 { left: 31.6667%; }
+#nlk-keyboard  #nlk71 { left: 38.1667%; }
+#nlk-keyboard  #nlk72 { left: 44.6667%; }
+#nlk-keyboard  #nlk74 { left: 51.1667%; }
+#nlk-keyboard  #nlk75 { left: 57.6667%; }
+#nlk-keyboard  #nlk76 { left: 64.1667%; }
+#nlk-keyboard  #nlk186 { left: 70.6667%; }
+#nlk-keyboard  #nlk222 { left: 77.1667%; }
+#nlk-keyboard  #nlk13 { left: 83.6667%; width: 15.6667%; }
+
+#nlk-keyboard  #nlk16 { width: 14.6667%; }
+#nlk-keyboard  #nlk90 { left: 15.3333%; }
+#nlk-keyboard  #nlk88 { left: 22%; }
+#nlk-keyboard  #nlk67 { left: 28.5%; }
+#nlk-keyboard  #nlk86 { left: 35%; }
+#nlk-keyboard  #nlk66 { left: 41.5%; }
+#nlk-keyboard  #nlk78 { left: 48%; }
+#nlk-keyboard  #nlk77 { left: 54.5%; }
+#nlk-keyboard  #nlk188 { left: 61%; }
+#nlk-keyboard  #nlk190 { left: 67.5%; }
+#nlk-keyboard  #nlk191 { left: 74%; }
+#nlk-keyboard  #nlk16r { left: 80.5%; width: 18.8333%; }
+
+#nlk-keyboard  #nlk17 { width: 8.3333% }
+#nlk-keyboard  #nlk18 { left: 16.6667%; width: 8.3333%; }
+#nlk-keyboard  #nlk32 { left: 25.6667%; width: 40% }
+#nlk-keyboard  #nlk18r { left: 66.3333%; width: 8.3333%; }
+#nlk-keyboard  #nlk17r { left: 91%; width: 8.3333%; }
+
+#nlk-keyboard  #status span {
+	border: solid 1px #999999;
+}
+
+#nlk-keyboard  #nlk-rtl {
+	float: right;
+}
